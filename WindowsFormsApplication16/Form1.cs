@@ -129,6 +129,7 @@ namespace WindowsFormsApplication16
                 {
                     Console.WriteLine("delete");
                     treeView1.SelectedNode.Remove();
+                    
                 }
             }
         }

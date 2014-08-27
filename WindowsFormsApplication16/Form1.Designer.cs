@@ -28,6 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Node0");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Node2");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Node3");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Node1", new System.Windows.Forms.TreeNode[] {
+            treeNode6,
+            treeNode7});
             this.button1 = new System.Windows.Forms.Button();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -55,6 +61,17 @@
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView1.Location = new System.Drawing.Point(3, 3);
             this.treeView1.Name = "treeView1";
+            treeNode5.Name = "Node0";
+            treeNode5.Text = "Node0";
+            treeNode6.Name = "Node2";
+            treeNode6.Text = "Node2";
+            treeNode7.Name = "Node3";
+            treeNode7.Text = "Node3";
+            treeNode8.Name = "Node1";
+            treeNode8.Text = "Node1";
+            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode5,
+            treeNode8});
             this.treeView1.Size = new System.Drawing.Size(239, 428);
             this.treeView1.TabIndex = 2;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
