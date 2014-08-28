@@ -234,5 +234,10 @@ namespace WindowsFormsApplication16
         {
             myxml.save();
         }
+
+        private void treeView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            Console.WriteLine("Node Double CLicked");
+        }
     }
 }
