@@ -169,7 +169,9 @@ namespace WindowsFormsApplication16
                 if ((((ComboBox)sender).SelectedItem.ToString() == "ON"))
                 {
                     if (driver.Initialized == false)
-                        driver.Initialize("usb0::2391::1031::MY44039785::INSTR", true, true, "Simulate=false, DriverSetup= Model=33220A");
+                        driver.Initialize(textBox1.Text, true, true, "Simulate=false, DriverSetup= Model=33220A");
+                        //NOT TESTED !!!
+                        //driver.Initialize("usb0::2391::1031::MY44039785::INSTR", true, true, "Simulate=false, DriverSetup= Model=33220A");
                     driver.Output.State = true;
                     textBox2.Text = "Output ON";
                     driver.System.EnableLocalControls();
