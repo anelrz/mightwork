@@ -135,6 +135,7 @@ namespace WindowsFormsApplication16
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
+            
             if (e.Node.Level > 0)
             {
                 textBox2.Focus();
@@ -143,6 +144,8 @@ namespace WindowsFormsApplication16
             }
             else
             {
+            Console.WriteLine("treenode selected");
+
                 if (driver.Initialized != false)
                 {
                     driver.Apply.SetSinusoid(Convert.ToDouble(e.Node.Nodes[0].Tag), Convert.ToDouble(e.Node.Nodes[1].Tag), Convert.ToDouble(e.Node.Nodes[2].Tag));
