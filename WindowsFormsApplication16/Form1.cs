@@ -39,12 +39,6 @@ namespace WindowsFormsApplication16
             {
                 Console.WriteLine("NULL");
                 Console.WriteLine(" Level: " + e.Node.Level);
-           /*     if (driver.Initialized != false)
-                {
-                    driver.Apply.SetSinusoid(Convert.ToDouble(e.Node.Nodes[0].Tag), Convert.ToDouble(e.Node.Nodes[1].Tag), Convert.ToDouble(e.Node.Nodes[2].Tag));
-                    driver.System.Beeper();
-                }
-           */         
             }
         }
 
@@ -116,8 +110,6 @@ namespace WindowsFormsApplication16
             myxml = new myXML(this.treeView1, this);
             myxml.load();
             driver = new Agilent33220();
-            //hello
-            //new branch
         }
 
 
@@ -134,8 +126,7 @@ namespace WindowsFormsApplication16
         }
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
-        {
-            
+        {      
             if (e.Node.Level > 0)
             {
                 textBox2.Focus();
@@ -148,6 +139,7 @@ namespace WindowsFormsApplication16
 
                 if (driver.Initialized != false)
                 {
+                    driver.Output.Voltage.Units = Agilent33220OutputVoltageUnitEnum.Agilent33220OutputVoltageUnitVrms;
                     driver.Apply.SetSinusoid(Convert.ToDouble(e.Node.Nodes[0].Tag), Convert.ToDouble(e.Node.Nodes[1].Tag), Convert.ToDouble(e.Node.Nodes[2].Tag));
                     driver.System.Beeper();
                     comboBox1.SelectedIndex = 0;
