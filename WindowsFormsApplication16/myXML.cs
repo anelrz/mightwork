@@ -45,8 +45,6 @@ namespace WindowsFormsApplication16
                 elem2.AppendChild(text2);
                 elem3.AppendChild(text3);
 
-    //          elem1.AppendChild(text1);
-
                 elem.AppendChild(elem0);
                 elem.AppendChild(elem1);
                 elem.AppendChild(elem2);
