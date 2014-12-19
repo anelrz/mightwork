@@ -68,7 +68,7 @@ namespace WindowsFormsApplication16
                 
                 foreach (XmlNode node in xl)
                 {
-                    string s = node["name"].InnerText;
+                    //string s = node["name"].InnerText;
                     f.addpreset(node["name"].InnerText, Convert.ToDouble(node["frequency"].InnerText), Convert.ToDouble(node["amplitude"].InnerText), Convert.ToDouble(node["offset"].InnerText));
                  
                 }
