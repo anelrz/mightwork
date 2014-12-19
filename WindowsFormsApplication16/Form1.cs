@@ -244,5 +244,10 @@ namespace WindowsFormsApplication16
         {
             Console.WriteLine("Node Double CLicked");
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
