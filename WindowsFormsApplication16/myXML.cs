@@ -27,23 +27,25 @@ namespace WindowsFormsApplication16
             xl.RemoveAll();
             foreach (TreeNode tn in treeView1.Nodes)
             {
-                XmlElement elem = xDoc.CreateElement(tn.Text);
+                XmlElement elem = xDoc.CreateElement("Preset");
 
-
+                XmlElement elem0 = xDoc.CreateElement("name");
                 XmlElement elem1 = xDoc.CreateElement("frequency");
                 XmlElement elem2 = xDoc.CreateElement("amplitude");
                 XmlElement elem3 = xDoc.CreateElement("offset");
 
+                string s = tn.Name;
+                XmlText text0 = xDoc.CreateTextNode(Convert.ToString(tn.Text));
                 XmlText text1 = xDoc.CreateTextNode(Convert.ToString(tn.Nodes[0].Tag));
                 XmlText text2 = xDoc.CreateTextNode(Convert.ToString(tn.Nodes[1].Tag));
                 XmlText text3 = xDoc.CreateTextNode(Convert.ToString(tn.Nodes[2].Tag));
 
+                elem0.AppendChild(text0);
                 elem1.AppendChild(text1);
                 elem2.AppendChild(text2);
                 elem3.AppendChild(text3);
 
-                elem1.AppendChild(text1);
-
+                elem.AppendChild(elem0);
                 elem.AppendChild(elem1);
                 elem.AppendChild(elem2);
                 elem.AppendChild(elem3);
@@ -66,7 +68,8 @@ namespace WindowsFormsApplication16
                 
                 foreach (XmlNode node in xl)
                 {
-                    f.addpreset(node.Name, Convert.ToDouble(node["frequency"].InnerText), Convert.ToDouble(node["amplitude"].InnerText), Convert.ToDouble(node["offset"].InnerText));
+                    //string s = node["name"].InnerText;
+                    f.addpreset(node["name"].InnerText, Convert.ToDouble(node["frequency"].InnerText), Convert.ToDouble(node["amplitude"].InnerText), Convert.ToDouble(node["offset"].InnerText));
                  
                 }
                 
