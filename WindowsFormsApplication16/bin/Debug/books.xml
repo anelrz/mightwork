@@ -18,28 +18,4 @@
     <amplitude>1</amplitude>
     <offset>0</offset>
   </Preset>
-  <Preset>
-    <name>hello</name>
-    <frequency>1000</frequency>
-    <amplitude>1</amplitude>
-    <offset>0</offset>
-  </Preset>
-  <Preset>
-    <name>hello</name>
-    <frequency>1000</frequency>
-    <amplitude>0,005</amplitude>
-    <offset>0</offset>
-  </Preset>
-  <Preset>
-    <name>hello</name>
-    <frequency>500</frequency>
-    <amplitude>1</amplitude>
-    <offset>0</offset>
-  </Preset>
-  <Preset>
-    <name>monte negro</name>
-    <frequency>1000</frequency>
-    <amplitude>1</amplitude>
-    <offset>0</offset>
-  </Preset>
 </presets>
