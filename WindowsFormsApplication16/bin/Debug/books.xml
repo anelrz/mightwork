@@ -1,19 +1,139 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <presets>
   <Preset>
-    <name>gfh</name>
-    <frequency>1000</frequency>
-    <amplitude>-9</amplitude>
-    <offset>2</offset>
+    <name>M1/1</name>
+    <frequency>80</frequency>
+    <amplitude>0,12176</amplitude>
+    <offset>-5</offset>
   </Preset>
   <Preset>
-    <name>hello</name>
+    <name>M1/2</name>
+    <frequency>80</frequency>
+    <amplitude>0,22883</amplitude>
+    <offset>-5</offset>
+  </Preset>
+  <Preset>
+    <name>M1/3</name>
+    <frequency>80</frequency>
+    <amplitude>0,35949</amplitude>
+    <offset>-5</offset>
+  </Preset>
+  <Preset>
+    <name>M2/1</name>
+    <frequency>80</frequency>
+    <amplitude>0,49</amplitude>
+    <offset>-5</offset>
+  </Preset>
+  <Preset>
+    <name>M2/2</name>
+    <frequency>80</frequency>
+    <amplitude>0,6475</amplitude>
+    <offset>-5</offset>
+  </Preset>
+  <Preset>
+    <name>M2/3</name>
+    <frequency>80</frequency>
+    <amplitude>0,71</amplitude>
+    <offset>-5</offset>
+  </Preset>
+  <Preset>
+    <name>M3/1</name>
+    <frequency>80</frequency>
+    <amplitude>0,32343</amplitude>
+    <offset>-5</offset>
+  </Preset>
+  <Preset>
+    <name>M3/2</name>
+    <frequency>80</frequency>
+    <amplitude>0,39018</amplitude>
+    <offset>-5</offset>
+  </Preset>
+  <Preset>
+    <name>M4/1</name>
+    <frequency>80</frequency>
+    <amplitude>0,625</amplitude>
+    <offset>-5</offset>
+  </Preset>
+  <Preset>
+    <name>M4/2</name>
+    <frequency>80</frequency>
+    <amplitude>0,905</amplitude>
+    <offset>-5</offset>
+  </Preset>
+  <Preset>
+    <name>M4/3</name>
+    <frequency>80</frequency>
+    <amplitude>1,175</amplitude>
+    <offset>-5</offset>
+  </Preset>
+  <Preset>
+    <name>M5/1</name>
+    <frequency>0</frequency>
+    <amplitude>0</amplitude>
+    <offset>-13,37</offset>
+  </Preset>
+  <Preset>
+    <name>M5/2</name>
     <frequency>1000</frequency>
     <amplitude>1</amplitude>
     <offset>0</offset>
   </Preset>
   <Preset>
-    <name>dgh dgfh</name>
+    <name>M5/3</name>
+    <frequency>1000</frequency>
+    <amplitude>1</amplitude>
+    <offset>0</offset>
+  </Preset>
+  <Preset>
+    <name>M6/1</name>
+    <frequency>1000</frequency>
+    <amplitude>1</amplitude>
+    <offset>0</offset>
+  </Preset>
+  <Preset>
+    <name>M6/2</name>
+    <frequency>1000</frequency>
+    <amplitude>1</amplitude>
+    <offset>0</offset>
+  </Preset>
+  <Preset>
+    <name>M6/3</name>
+    <frequency>1000</frequency>
+    <amplitude>1</amplitude>
+    <offset>0</offset>
+  </Preset>
+  <Preset>
+    <name>M7/1</name>
+    <frequency>1000</frequency>
+    <amplitude>1</amplitude>
+    <offset>0</offset>
+  </Preset>
+  <Preset>
+    <name>M7/2</name>
+    <frequency>1000</frequency>
+    <amplitude>1</amplitude>
+    <offset>0</offset>
+  </Preset>
+  <Preset>
+    <name>M7/3</name>
+    <frequency>1000</frequency>
+    <amplitude>1</amplitude>
+    <offset>0</offset>
+  </Preset>
+  <Preset>
+    <name>M8/1</name>
+    <frequency>1000</frequency>
+    <amplitude>1</amplitude>
+    <offset>0</offset>
+  </Preset>
+  <Preset>
+    <name>M8/2</name>
+    <frequency>1000</frequency>
+    <amplitude>1</amplitude>
+    <offset>0</offset>
+  </Preset>
+  <Preset>
+    <name>M8/3</name>
     <frequency>1000</frequency>
     <amplitude>1</amplitude>
     <offset>0</offset>
