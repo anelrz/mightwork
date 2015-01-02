@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication16", "WindowsFormsApplication16\WindowsFormsApplication16.csproj", "{996E67D7-28D2-4F00-BB03-B284B1F2B526}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B1CFD9D-EC8A-4541-96D1-22EAF3ED6FAA}"
+	ProjectSection(SolutionItems) = preProject
+		WindowsFormsApplication16\bin\Debug\books.xml = WindowsFormsApplication16\bin\Debug\books.xml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

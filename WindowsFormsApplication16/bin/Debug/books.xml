@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<presets>
+  <Preset>
+    <name>gfh</name>
+    <frequency>1000</frequency>
+    <amplitude>-9</amplitude>
+    <offset>2</offset>
+  </Preset>
+  <Preset>
+    <name>hello</name>
+    <frequency>1000</frequency>
+    <amplitude>1</amplitude>
+    <offset>0</offset>
+  </Preset>
+  <Preset>
+    <name>dgh dgfh</name>
+    <frequency>1000</frequency>
+    <amplitude>1</amplitude>
+    <offset>0</offset>
+  </Preset>
+  <Preset>
+    <name>hello</name>
+    <frequency>1000</frequency>
+    <amplitude>1</amplitude>
+    <offset>0</offset>
+  </Preset>
+  <Preset>
+    <name>hello</name>
+    <frequency>1000</frequency>
+    <amplitude>0,005</amplitude>
+    <offset>0</offset>
+  </Preset>
+  <Preset>
+    <name>hello</name>
+    <frequency>500</frequency>
+    <amplitude>1</amplitude>
+    <offset>0</offset>
+  </Preset>
+  <Preset>
+    <name>monte negro</name>
+    <frequency>1000</frequency>
+    <amplitude>1</amplitude>
+    <offset>0</offset>
+  </Preset>
+</presets>
