@@ -1131,49 +1131,49 @@
   <Preset>
     <name>M71/1</name>
     <frequency>80</frequency>
-    <amplitude>1.224</amplitude>
+    <amplitude>1,224</amplitude>
     <offset>-5</offset>
   </Preset>
   <Preset>
     <name>M71/2</name>
     <frequency>80</frequency>
-    <amplitude>2.040</amplitude>
+    <amplitude>2,040</amplitude>
     <offset>-5</offset>
   </Preset>
   <Preset>
     <name>M72/1</name>
     <frequency>80</frequency>
-    <amplitude>0.204</amplitude>
+    <amplitude>0,204</amplitude>
     <offset>-5</offset>
   </Preset>
   <Preset>
     <name>M72/2</name>
     <frequency>80</frequency>
-    <amplitude>0.245</amplitude>
+    <amplitude>0,245</amplitude>
     <offset>-5</offset>
   </Preset>
   <Preset>
     <name>M72/3</name>
     <frequency>80</frequency>
-    <amplitude>0.286</amplitude>
+    <amplitude>0,286</amplitude>
     <offset>-5</offset>
   </Preset>
   <Preset>
     <name>M73/1</name>
     <frequency>80</frequency>
-    <amplitude>0.408</amplitude>
+    <amplitude>0,408</amplitude>
     <offset>-5</offset>
   </Preset>
   <Preset>
     <name>M73/2</name>
     <frequency>80</frequency>
-    <amplitude>0.612</amplitude>
+    <amplitude>0,612</amplitude>
     <offset>-5</offset>
   </Preset>
   <Preset>
     <name>M73/3</name>
     <frequency>80</frequency>
-    <amplitude>0.816</amplitude>
+    <amplitude>0,816</amplitude>
     <offset>-5</offset>
   </Preset>
 </presets>
