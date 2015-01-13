@@ -140,11 +140,15 @@ namespace WindowsFormsApplication16
 
                 if (driver.Initialized != false)
                 {
-                    driver.Output.Voltage.Units = Agilent33220OutputVoltageUnitEnum.Agilent33220OutputVoltageUnitVrms;
-                    driver.Apply.SetSinusoid(Convert.ToDouble(e.Node.Nodes[0].Tag), Convert.ToDouble(e.Node.Nodes[1].Tag), Convert.ToDouble(e.Node.Nodes[2].Tag)-Convert.ToDouble(textBox3.Text));
-                    driver.System.Beeper();
-                    comboBox1.SelectedIndex = 0;
-                    textBox2.Text = "Output ON";
+                    try
+                    {
+                        driver.Output.Voltage.Units = Agilent33220OutputVoltageUnitEnum.Agilent33220OutputVoltageUnitVrms;
+                        driver.Apply.SetSinusoid(Convert.ToDouble(e.Node.Nodes[0].Tag), Convert.ToDouble(e.Node.Nodes[1].Tag), Convert.ToDouble(e.Node.Nodes[2].Tag) - Convert.ToDouble(textBox3.Text));
+                        driver.System.Beeper();
+                        comboBox1.SelectedIndex = 0;
+                        textBox2.Text = "Output ON";
+                    }
+                    catch { }
                 }
             }
         }
@@ -265,11 +269,6 @@ namespace WindowsFormsApplication16
         private void textBox3_Validated(object sender, EventArgs e)
         {
             errorProvider1.SetError(textBox3, String.Empty);
-        }
-
-        private void textBox3_TextChanged_1(object sender, EventArgs e)
-        {
-            textBox3.Focus();
         }
     }
 }
