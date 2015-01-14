@@ -249,26 +249,16 @@ namespace WindowsFormsApplication16
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
-        }
-
-        private void textBox3_Validating(object sender, CancelEventArgs e)
-        {
             try
             {
+                Console.WriteLine("Hello");
                 Convert.ToDouble(textBox3.Text);
-
+                errorProvider1.SetError(textBox3, String.Empty);
             }
             catch (FormatException)
             {
                 errorProvider1.SetError(textBox3, "Not Valid number");
-                e.Cancel = true;
             }
-        }
-
-        private void textBox3_Validated(object sender, EventArgs e)
-        {
-            errorProvider1.SetError(textBox3, String.Empty);
         }
     }
 }

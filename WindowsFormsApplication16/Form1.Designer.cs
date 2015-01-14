@@ -154,8 +154,7 @@
             this.textBox3.Size = new System.Drawing.Size(204, 20);
             this.textBox3.TabIndex = 4;
             this.textBox3.Text = "Bias";
-            this.textBox3.Validating += new System.ComponentModel.CancelEventHandler(this.textBox3_Validating);
-            this.textBox3.Validated += new System.EventHandler(this.textBox3_Validated);
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox2
             // 
