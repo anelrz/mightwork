@@ -260,5 +260,10 @@ namespace WindowsFormsApplication16
                 errorProvider1.SetError(textBox3, "Not Valid number");
             }
         }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
