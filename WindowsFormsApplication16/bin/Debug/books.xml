@@ -2,7 +2,7 @@
 <presets>
   <Preset>
     <name>M1/1</name>
-    <frequency>80</frequency>
+    <frequency>100</frequency>
     <amplitude>0.12176</amplitude>
     <offset>-5</offset>
   </Preset>

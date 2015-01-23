@@ -234,7 +234,7 @@ namespace WindowsFormsApplication16
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            myxml.save(openFileDialog1.FileName);
+            //myxml.save(openFileDialog1.FileName);
         }
 
         private void treeView1_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -276,6 +276,16 @@ namespace WindowsFormsApplication16
         {
             textBox4.Text = openFileDialog1.SafeFileName;
             myxml.load(openFileDialog1.FileName);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                myxml.save(openFileDialog1.FileName);
+            }
+            catch { }
+
         }
     }
 }
