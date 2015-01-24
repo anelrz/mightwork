@@ -21,6 +21,10 @@ namespace WindowsFormsApplication16
         {
             InitializeComponent();
             openFileDialog1.InitialDirectory = Application.StartupPath;
+            System.Globalization.CultureInfo customCulture = (System.Globalization.CultureInfo)System.Threading.Thread.CurrentThread.CurrentCulture.Clone();
+            customCulture.NumberFormat.NumberDecimalSeparator = ",";
+
+            System.Threading.Thread.CurrentThread.CurrentCulture = customCulture;
         }
 
         private void button1_Click(object sender, EventArgs e)
