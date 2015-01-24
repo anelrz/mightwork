@@ -20,6 +20,7 @@ namespace WindowsFormsApplication16
         public Form1()
         {
             InitializeComponent();
+            openFileDialog1.InitialDirectory = Application.StartupPath;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -108,7 +109,6 @@ namespace WindowsFormsApplication16
         private void Form1_Load(object sender, EventArgs e)
         {
             myxml = new myXML(this.treeView1, this);
-            myxml.load();
             driver = new Agilent33220();
         }
 
@@ -234,7 +234,7 @@ namespace WindowsFormsApplication16
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            myxml.save();
+            //myxml.save(openFileDialog1.FileName);
         }
 
         private void treeView1_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -263,6 +263,28 @@ namespace WindowsFormsApplication16
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+            textBox4.Text = openFileDialog1.SafeFileName;
+            myxml.load(openFileDialog1.FileName);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                myxml.save(openFileDialog1.FileName);
+            }
+            catch { }
 
         }
     }

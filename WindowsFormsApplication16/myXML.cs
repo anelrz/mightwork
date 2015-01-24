@@ -13,14 +13,14 @@ namespace WindowsFormsApplication16
         private TreeView treeView1;
         private Form1 f;
         public XmlDocument xDoc;
-        private string xmlfile = "books.xml";
+        //private string xmlfile = "books.xml";
 
         public myXML(TreeView tv, Form1 f)
         {
             this.treeView1 = tv;
             this.f = f;
         }
-        public void save()
+        public void save(string xmlfile)
         {
             Console.WriteLine(xDoc.DocumentElement.InnerText);
             XmlElement xl = xDoc.DocumentElement;
@@ -57,7 +57,7 @@ namespace WindowsFormsApplication16
            // treeView1.Nodes
         }
 
-        public void load()
+        public void load(string xmlfile)
         {
             try
             {
