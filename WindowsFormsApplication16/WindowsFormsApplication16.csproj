@@ -128,6 +128,24 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+    <COMReference Include="AgilentE36xxLib">
+      <Guid>{CB6931FD-857F-4A8A-8F32-DEC3FF69ADA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="IviDCPwrLib">
+      <Guid>{47ED5121-A398-11D4-BA58-000064657374}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
     <COMReference Include="IviDriverLib">
       <Guid>{47ED5120-A398-11D4-BA58-000064657374}</Guid>
       <VersionMajor>1</VersionMajor>

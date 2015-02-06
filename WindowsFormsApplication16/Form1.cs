@@ -1,4 +1,5 @@
 ﻿using Agilent.Agilent33220.Interop;
+using Agilent.AgilentE36xx.Interop;
 using Ivi.Driver.Interop;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ namespace WindowsFormsApplication16
 {
     public partial class Form1 : Form
     {
+        AgilentE36xx E3641A;
         Agilent33220 driver; 
         public string seba;
         public myXML myxml;
@@ -114,6 +116,8 @@ namespace WindowsFormsApplication16
         {
             myxml = new myXML(this.treeView1, this);
             driver = new Agilent33220();
+            E3641A = new AgilentE36xx();
+            
         }
 
 
@@ -142,15 +146,26 @@ namespace WindowsFormsApplication16
             {
             Console.WriteLine("treenode selected");
 
-                if (driver.Initialized != false)
+                if (driver.Initialized != false || E3641A.Initialized != false)
                 {
                     try
                     {
-                        driver.Output.Voltage.Units = Agilent33220OutputVoltageUnitEnum.Agilent33220OutputVoltageUnitVrms;
-                        driver.Apply.SetSinusoid(Convert.ToDouble(e.Node.Nodes[0].Tag), Convert.ToDouble(e.Node.Nodes[1].Tag), Convert.ToDouble(e.Node.Nodes[2].Tag) - Convert.ToDouble(textBox3.Text));
-                        driver.System.Beeper();
-                        comboBox1.SelectedIndex = 0;
-                        textBox2.Text = "Output ON";
+                        if(Convert.ToDouble(e.Node.Nodes[0].Tag) != 0 || E3641A.Initialized == false)
+                        {
+                            driver.Output.Voltage.Units = Agilent33220OutputVoltageUnitEnum.Agilent33220OutputVoltageUnitVrms;
+                            driver.Apply.SetSinusoid(Convert.ToDouble(e.Node.Nodes[0].Tag), Convert.ToDouble(e.Node.Nodes[1].Tag), Convert.ToDouble(e.Node.Nodes[2].Tag) - Convert.ToDouble(textBox3.Text));
+                            driver.System.Beeper();
+                            comboBox1.SelectedIndex = 0;
+                            textBox2.Text = "Output ON";
+                        }
+                        else
+                        {
+                            AgilentE36xxOutput output = E3641A.Outputs.Item["Output1"];
+                            
+                            //E3641A.Display.Clear();
+                            output.VoltageLevel = Math.Abs(Convert.ToDouble(e.Node.Nodes[2].Tag));
+                            E3641A.Outputs.Enabled = true;
+                        }
                     }
                     catch { }
                 }
@@ -290,6 +305,46 @@ namespace WindowsFormsApplication16
             }
             catch { }
 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox CB = (CheckBox) sender;
+            if(CB.CheckState == CheckState.Checked)
+            {
+                Console.WriteLine("checked");
+                try
+                {
+                    
+                    E3641A.Initialize("ASRL" + numericUpDown1.Value.ToString() + "::INSTR", false, false, "Cache=false");
+                        if (E3641A.Initialized)
+                        {
+                            Console.WriteLine("initialized");
+                            E3641A.Outputs.Item["Output1"].CurrentLimit = 0.08;
+                            //E3641A.Display.Text = "I'm ready";
+                        }
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    checkBox1.CheckState = CheckState.Unchecked;
+                }
+            }
+            else
+            {
+                Console.WriteLine("un-checked");
+                if (E3641A.Initialized)
+                {
+                    Console.WriteLine("Connection closed");
+                    E3641A.Display.Text = "Good bye";
+                    E3641A.Close();
+                }
+                else
+                {
+                    Console.WriteLine("Close skiped because connection not initialized");
+                }
+                
+            }
         }
     }
 }
