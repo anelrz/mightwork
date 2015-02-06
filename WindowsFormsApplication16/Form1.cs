@@ -316,7 +316,7 @@ namespace WindowsFormsApplication16
                 try
                 {
                     
-                    E3641A.Initialize("ASRL" + numericUpDown1.Value.ToString() + "::INSTR", false, false, "Cache=false");
+                    E3641A.Initialize("ASRL" + numericUpDown1.Value.ToString() + "::INSTR", true, true, "Cache=true");
                         if (E3641A.Initialized)
                         {
                             Console.WriteLine("initialized");
