@@ -45,21 +45,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(203, 522);
+            this.button1.Location = new System.Drawing.Point(203, 502);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(389, 25);
             this.button1.TabIndex = 1;
@@ -72,7 +72,7 @@
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView1.Location = new System.Drawing.Point(3, 3);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(194, 513);
+            this.treeView1.Size = new System.Drawing.Size(194, 493);
             this.treeView1.TabIndex = 2;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
@@ -92,9 +92,10 @@
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(595, 550);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
@@ -128,7 +129,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(389, 513);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(389, 493);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
             // comboBox1
@@ -138,7 +139,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "ON",
             "OFF"});
-            this.comboBox1.Location = new System.Drawing.Point(3, 432);
+            this.comboBox1.Location = new System.Drawing.Point(3, 412);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(224, 21);
             this.comboBox1.TabIndex = 0;
@@ -154,7 +155,7 @@
             "INF",
             "MIN",
             "MAX"});
-            this.comboBox2.Location = new System.Drawing.Point(3, 405);
+            this.comboBox2.Location = new System.Drawing.Point(3, 385);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(224, 21);
             this.comboBox2.TabIndex = 1;
@@ -166,7 +167,7 @@
             // textBox1
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(3, 379);
+            this.textBox1.Location = new System.Drawing.Point(3, 359);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(224, 20);
             this.textBox1.TabIndex = 3;
@@ -176,7 +177,7 @@
             // 
             this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(3, 353);
+            this.textBox3.Location = new System.Drawing.Point(3, 333);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(224, 20);
             this.textBox3.TabIndex = 4;
@@ -190,7 +191,7 @@
             this.pictureBox1.Image = global::WindowsFormsApplication16.Properties.Resources.Agilent_HP_33210A;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(383, 344);
+            this.pictureBox1.Size = new System.Drawing.Size(383, 324);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -198,7 +199,7 @@
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Location = new System.Drawing.Point(233, 461);
+            this.button2.Location = new System.Drawing.Point(233, 441);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(153, 23);
             this.button2.TabIndex = 6;
@@ -212,7 +213,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(3, 461);
+            this.textBox4.Location = new System.Drawing.Point(3, 441);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(224, 20);
             this.textBox4.TabIndex = 7;
@@ -220,7 +221,7 @@
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Location = new System.Drawing.Point(233, 432);
+            this.button3.Location = new System.Drawing.Point(233, 412);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(153, 23);
             this.button3.TabIndex = 8;
@@ -234,7 +235,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(233, 350);
+            this.label1.Location = new System.Drawing.Point(233, 330);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 26);
             this.label1.TabIndex = 9;
@@ -247,7 +248,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(233, 376);
+            this.label2.Location = new System.Drawing.Point(233, 356);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 26);
             this.label2.TabIndex = 10;
@@ -260,7 +261,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(233, 402);
+            this.label3.Location = new System.Drawing.Point(233, 382);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(153, 27);
             this.label3.TabIndex = 13;
@@ -273,7 +274,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(233, 490);
+            this.checkBox1.Location = new System.Drawing.Point(233, 470);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(153, 20);
             this.checkBox1.TabIndex = 12;
@@ -281,27 +282,9 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // textBox2
-            // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(3, 522);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 20);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
-            // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 490);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 470);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             20,
             0,
@@ -321,6 +304,24 @@
             0,
             0});
             // 
+            // textBox2
+            // 
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox2.Location = new System.Drawing.Point(3, 502);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(194, 20);
+            this.textBox2.TabIndex = 4;
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,8 +338,8 @@
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
